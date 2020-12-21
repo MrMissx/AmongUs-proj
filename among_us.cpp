@@ -49,12 +49,6 @@ void MenuHeader(){
 }
 
 
-void NeedEnter(char text[]){
-    printf("%s\n", text);
-    getchar();
-}
-
-
 const char* color(int x){
     switch(x){
         case 1: return "Red";
@@ -73,7 +67,7 @@ const char* color(int x){
 
 
 int GetRandom(){
-    return (rand()%plyr)+1;  // random 1-player count
+    return (rand()%plyr)+1;  // random int (1-player count)
 }
 
 
